@@ -136,6 +136,10 @@ echo $result;
 We've added the Database dump to kick off this project withing the DB folder. Please let us know if you have any
 problems spinning up this project.
 
+the admin panel trigger is '/admin'
+username: admin 
+password:delta5mango
+
 ## Extras
 
 Please let us know what you used to set up you local environment whether it is nitro, Docker, DDEV, MAMP or any other
