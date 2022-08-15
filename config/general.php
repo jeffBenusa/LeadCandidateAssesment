@@ -14,6 +14,11 @@ $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
 
 return [
+    'aliases' => [
+        '@uploadsBasePath' => dirname(__DIR__) . '/web/uploads',
+        '@assetsBasePath' =>  dirname(__DIR__) . '/web/assets',
+    ],
+
     // Default Week Start Day (0 = Sunday, 1 = Monday...)
     'defaultWeekStartDay' => 1,
 

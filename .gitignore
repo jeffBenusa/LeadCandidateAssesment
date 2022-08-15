@@ -3,3 +3,12 @@
 /vendor
 /node_modules
 .DS_Store
+
+# Ignore transforms
+/web/uploads/_*
+
+# Ignore Generated asset files
+/web/assets/*
+
+# Craft logs & caches
+/storage/*

@@ -1,0 +1,25 @@
+header {
+  background-image: url("../images/header-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 50px $green;
+  border-bottom: solid 50px $green;
+  min-height: 500px;
+  h1{
+    color: $platinum;
+  }
+  p{
+    font-size: 2rem;
+    color: $platinum;
+    text-shadow: 1px 1px black;
+  }
+  .btn{
+    background-color: $green;
+    color: $white;
+    transition: all .2s;
+    &:hover{
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}

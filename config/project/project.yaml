@@ -1,4 +1,4 @@
-dateModified: 1660248711
+dateModified: 1660437436
 email:
   fromEmail: jvargas@conversionia.com
   fromName: Conversion-assesment
@@ -10,8 +10,13 @@ email:
   transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 meta:
   __names__:
+    1efe2a80-8045-41dd-ae04-8e64b18f4f03: Slides # Slides
     4ce0c4e7-0ade-4470-9284-adfde6460ad0: Conversion-assesment # Conversion-assesment
+    15fcc23c-612d-4709-bd3c-6736f6d76d1e: Homepage # Homepage
+    274b5f37-481f-47df-8ece-a277e6d6a399: Local # Local
+    710c1936-f63d-4a3e-8ddd-1956d785b7ff: Text # Text
     dcaed4cd-b19b-4346-ae5d-ba0b781d29aa: Conversion-assesment # Conversion-assesment
+    e10d1e8b-f7b3-427c-9be7-0f5c2fa8daae: Homepage # Homepage
     f57762b0-c0de-40bb-8373-43c2da606997: Common # Common
 plugins:
   freeform:
@@ -101,6 +106,10 @@ plugins:
       twigInHtmlIsolatedMode: true
       updateSearchIndexes: true
   sendgrid:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  twigpack:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

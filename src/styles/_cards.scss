@@ -1,0 +1,21 @@
+.cards{
+  background-color: $lightWhite;
+  padding: 5rem 0;
+
+  .card{
+    background: $platinum;
+  }
+
+  .card__title{
+    color: $green
+  }
+
+  // Utility
+  .card--background-blue{
+    background: $blue;
+  }
+
+  .card--color-orange{
+    color: $orange
+  }
+}

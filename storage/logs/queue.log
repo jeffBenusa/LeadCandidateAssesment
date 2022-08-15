@@ -1,0 +1,1094 @@
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 13:34:37 [-][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\shell\Bootstrap::bootstrap()
+2022-08-15 13:34:37 [-][1][-][trace][yii\base\Module::getModule] Loading module: conversion
+2022-08-15 13:34:37 [-][1][-][trace][yii\base\Application::bootstrap] Bootstrap with modules\conversion\Conversion
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::query] SHOW TABLES
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::query] SHOW TABLES
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::query] SHOW TABLES
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 20:34:37'
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 20:34:37'
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 20:34:37'
+2022-08-15 13:34:37 [-][1][-][info][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 13:34:37 [-][1][-][profile begin][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 13:34:37 [-][1][-][profile end][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 13:34:38 [-][1][-][info][nystudio107\twigpack\Twigpack::init] Twigpack plugin loaded
+2022-08-15 13:34:38 [-][1][-][info][yii\web\Session::open] Session started
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='O2-mFWhNCREqENSENJHhzYSzY9ctmx0Ie6YPPIYMx5OF3SFFXu24PI8yjhZBp1rQUrrLteuVS4XoxBAyRlWETgZ79_v95MT8IP9W') AND (`userId`=1)
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='O2-mFWhNCREqENSENJHhzYSzY9ctmx0Ie6YPPIYMx5OF3SFFXu24PI8yjhZBp1rQUrrLteuVS4XoxBAyRlWETgZ79_v95MT8IP9W') AND (`userId`=1)
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='O2-mFWhNCREqENSENJHhzYSzY9ctmx0Ie6YPPIYMx5OF3SFFXu24PI8yjhZBp1rQUrrLteuVS4XoxBAyRlWETgZ79_v95MT8IP9W') AND (`userId`=1)
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 20:34:38' WHERE `id`='16'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 20:34:38' WHERE `id`='16'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 20:34:38' WHERE `id`='16'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'queue/run'
+2022-08-15 13:34:38 [-][1][-][trace][yii\base\Controller::runAction] Route to run: queue/run
+2022-08-15 13:34:38 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\QueueController::actionRun()
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660595678 - `ttr`)
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660595678 - `ttr`)
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660595678 - `ttr`)
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678))
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678))
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678))
+2022-08-15 13:34:38 [-][1][-][warning][craft\helpers\App::maxPowerCaptain] set_time_limit() is not available
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [3] Purge Unfinalized Assets (attempt: 1, pid: 42172) - Started
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `assetId`
+FROM `freeform_unfinalized_files`
+WHERE `freeform_unfinalized_files`.`dateCreated` < '2022-08-15T17:34:38+00:00'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `assetId`
+FROM `freeform_unfinalized_files`
+WHERE `freeform_unfinalized_files`.`dateCreated` < '2022-08-15T17:34:38+00:00'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `assetId`
+FROM `freeform_unfinalized_files`
+WHERE `freeform_unfinalized_files`.`dateCreated` < '2022-08-15T17:34:38+00:00'
+2022-08-15 13:34:38 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [3] Purge Unfinalized Assets (attempt: 1, pid: 42172) - Done (time: 0.003s)
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='3'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 20:34:38', `timeUpdated`=1660595678, `attempt`=1 WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [4] Generating pending image transforms (attempt: 1, pid: 42172) - Started
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 13:34:38 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [4] Generating pending image transforms (attempt: 1, pid: 42172) - Done (time: 0.002s)
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='4'
+2022-08-15 13:34:38 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 13:34:38 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660595678)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Connection::open] Opening DB connection: mysql:host=127.0.0.1;dbname=conversion_local;port=3306
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `info`
+WHERE `id`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `s`.`id`, `s`.`name`, `s`.`handle`, `s`.`language`, `s`.`primary`, `s`.`hasUrls`, `s`.`baseUrl`, `s`.`sortOrder`, `s`.`uid`, `s`.`dateCreated`, `s`.`dateUpdated`, `s`.`groupId`, `s`.`enabled`
+FROM `sites` `s`
+INNER JOIN `sitegroups` `sg` ON `sg`.`id` = `s`.`groupId`
+WHERE (`s`.`dateDeleted` IS NULL) AND (`sg`.`dateDeleted` IS NULL)
+ORDER BY `sg`.`name`, `s`.`sortOrder`
+2022-08-15 14:02:36 [-][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\shell\Bootstrap::bootstrap()
+2022-08-15 14:02:36 [-][1][-][trace][yii\base\Module::getModule] Loading module: conversion
+2022-08-15 14:02:36 [-][1][-][trace][yii\base\Application::bootstrap] Bootstrap with modules\conversion\Conversion
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`, `version`, `schemaVersion`, `licenseKeyStatus`, `installDate`, `licensedEdition`
+FROM `plugins`
+ORDER BY `handle`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW TABLES
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW TABLES
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW TABLES
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 21:02:36'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 21:02:36'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `freeform_lock` WHERE `dateCreated` < '2022-08-08 21:02:36'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `key`, MAX(`dateCreated`) AS `date`
+FROM `freeform_lock`
+GROUP BY `key`
+2022-08-15 14:02:36 [-][1][-][info][nystudio107\twigpack\Twigpack::init] Twigpack plugin loaded
+2022-08-15 14:02:36 [-][1][-][info][yii\web\Session::open] Session started
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT COUNT(*)
+FROM (SELECT 1
+FROM `sites`
+LIMIT 2) `x`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `fields`.`id`, `fields`.`dateCreated`, `fields`.`dateUpdated`, `fields`.`groupId`, `fields`.`name`, `fields`.`handle`, `fields`.`context`, `fields`.`instructions`, `fields`.`translationMethod`, `fields`.`translationKeyFormat`, `fields`.`type`, `fields`.`settings`, `fields`.`uid`, `fields`.`searchable`, `fields`.`columnSuffix`
+FROM `fields` `fields`
+ORDER BY `fields`.`name`, `fields`.`handle`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `elements`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'elements' AND `kcu`.`TABLE_NAME` = 'elements'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `users`.`password`, `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, `users`.`username`, `users`.`firstName`, `users`.`lastName`, `users`.`email`, `users`.`unverifiedEmail`, `users`.`admin`, `users`.`locked`, `users`.`pending`, `users`.`suspended`, `users`.`lastLoginDate`, `users`.`lockoutDate`, `users`.`photoId`, `users`.`hasDashboard`, `content`.`id` AS `contentId`, `content`.`field_text_ujcehzsb`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `users` `users` ON `users`.`id` = `elements`.`id`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+WHERE (`elements`.`id`=1) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`draftId` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `users`.`username`
+LIMIT 1) `subquery`
+INNER JOIN `users` `users` ON `users`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+ORDER BY `users`.`username`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cQxHzVDidv0hrJsD_C8C7Mj_nLFHpkSDw6savwfaUCldNnWJT8_saMv-r5GpFz9qIy2jK-G7r-NbM2PYeRfdiiSUn8NwYucSHmko') AND (`userId`=1)
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cQxHzVDidv0hrJsD_C8C7Mj_nLFHpkSDw6savwfaUCldNnWJT8_saMv-r5GpFz9qIy2jK-G7r-NbM2PYeRfdiiSUn8NwYucSHmko') AND (`userId`=1)
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `sessions`
+WHERE (`token`='cQxHzVDidv0hrJsD_C8C7Mj_nLFHpkSDw6savwfaUCldNnWJT8_saMv-r5GpFz9qIy2jK-G7r-NbM2PYeRfdiiSUn8NwYucSHmko') AND (`userId`=1)
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `sessions`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'sessions' AND `kcu`.`TABLE_NAME` = 'sessions'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 21:02:36' WHERE `id`='17'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 21:02:36' WHERE `id`='17'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] UPDATE `sessions` SET `dateUpdated`='2022-08-15 21:02:36' WHERE `id`='17'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `preferences`
+FROM `userpreferences`
+WHERE `userId`=1
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][trace][craft\web\Application::_processActionRequest] Route requested: 'queue/run'
+2022-08-15 14:02:36 [-][1][-][trace][yii\base\Controller::runAction] Route to run: queue/run
+2022-08-15 14:02:36 [-][1][-][trace][yii\base\InlineAction::runWithParams] Running action: craft\controllers\QueueController::actionRun()
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660597356 - `ttr`)
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660597356 - `ttr`)
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `queue`
+WHERE ((`channel`='queue') AND (`fail`=FALSE)) AND (`timeUpdated` < 1660597356 - `ttr`)
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (NOT (`timeUpdated` IS NULL))))
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356))
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356))
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT EXISTS(SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356))
+2022-08-15 14:02:36 [-][1][-][warning][craft\helpers\App::maxPowerCaptain] set_time_limit() is not available
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `queue`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'queue' AND `kcu`.`TABLE_NAME` = 'queue'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [5] Updating search indexes (attempt: 1, pid: 50336) - Started
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`, `handle`
+FROM `freeform_forms`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`, `handle`
+FROM `freeform_forms`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`, `handle`
+FROM `freeform_forms`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `freeform_submissions`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `freeform_submissions`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `freeform_submissions`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'freeform_submissions' AND `kcu`.`TABLE_NAME` = 'freeform_submissions'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'freeform_submissions' AND `kcu`.`TABLE_NAME` = 'freeform_submissions'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'freeform_submissions' AND `kcu`.`TABLE_NAME` = 'freeform_submissions'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `freeform_fields`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `freeform_fields`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `freeform_fields`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `drafts`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `drafts`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `drafts`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'drafts' AND `kcu`.`TABLE_NAME` = 'drafts'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'drafts' AND `kcu`.`TABLE_NAME` = 'drafts'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'drafts' AND `kcu`.`TABLE_NAME` = 'drafts'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, freeform_submissions.`formId`, freeform_submissions.`userId`, freeform_submissions.`statusId`, freeform_submissions.`incrementalId`, freeform_submissions.`token`, freeform_submissions.`isSpam`, freeform_submissions.`ip`, freeform_submissions.`field_14`, freeform_submissions.`field_3`, freeform_submissions.`field_13`, freeform_submissions.`field_10`, freeform_submissions.`field_1`, freeform_submissions.`field_2`, freeform_submissions.`field_4`, freeform_submissions.`field_5`, freeform_submissions.`field_6`, freeform_submissions.`field_7`, freeform_submissions.`field_9`, freeform_submissions.`field_11`, freeform_submissions.`field_8`, freeform_submissions.`field_12`, `content`.`id` AS `contentId`, `content`.`title`, `content`.`field_text_ujcehzsb`, `elements`.`draftId`, `drafts`.`creatorId` AS `draftCreatorId`, `drafts`.`name` AS `draftName`, `drafts`.`notes` AS `draftNotes`, `drafts`.`provisional` AS `isProvisionalDraft`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `elements`.`id`
+INNER JOIN `freeform_statuses` `sub_freeform_statuses` ON sub_freeform_statuses.`id` = freeform_submissions.`statusId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+WHERE (freeform_submissions.`isSpam`=FALSE) AND (`elements`.`id`=53) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `elements`.`dateCreated` DESC) `subquery`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+ORDER BY `elements`.`dateCreated` DESC
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, freeform_submissions.`formId`, freeform_submissions.`userId`, freeform_submissions.`statusId`, freeform_submissions.`incrementalId`, freeform_submissions.`token`, freeform_submissions.`isSpam`, freeform_submissions.`ip`, freeform_submissions.`field_14`, freeform_submissions.`field_3`, freeform_submissions.`field_13`, freeform_submissions.`field_10`, freeform_submissions.`field_1`, freeform_submissions.`field_2`, freeform_submissions.`field_4`, freeform_submissions.`field_5`, freeform_submissions.`field_6`, freeform_submissions.`field_7`, freeform_submissions.`field_9`, freeform_submissions.`field_11`, freeform_submissions.`field_8`, freeform_submissions.`field_12`, `content`.`id` AS `contentId`, `content`.`title`, `content`.`field_text_ujcehzsb`, `elements`.`draftId`, `drafts`.`creatorId` AS `draftCreatorId`, `drafts`.`name` AS `draftName`, `drafts`.`notes` AS `draftNotes`, `drafts`.`provisional` AS `isProvisionalDraft`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `elements`.`id`
+INNER JOIN `freeform_statuses` `sub_freeform_statuses` ON sub_freeform_statuses.`id` = freeform_submissions.`statusId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+WHERE (freeform_submissions.`isSpam`=FALSE) AND (`elements`.`id`=53) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `elements`.`dateCreated` DESC) `subquery`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+ORDER BY `elements`.`dateCreated` DESC
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `elements`.`id`, `elements`.`fieldLayoutId`, `elements`.`uid`, `elements`.`enabled`, `elements`.`archived`, `elements`.`dateCreated`, `elements`.`dateUpdated`, `elements_sites`.`id` AS `siteSettingsId`, `elements_sites`.`slug`, `elements_sites`.`siteId`, `elements_sites`.`uri`, `elements_sites`.`enabled` AS `enabledForSite`, `elements`.`canonicalId`, `elements`.`dateLastMerged`, freeform_submissions.`formId`, freeform_submissions.`userId`, freeform_submissions.`statusId`, freeform_submissions.`incrementalId`, freeform_submissions.`token`, freeform_submissions.`isSpam`, freeform_submissions.`ip`, freeform_submissions.`field_14`, freeform_submissions.`field_3`, freeform_submissions.`field_13`, freeform_submissions.`field_10`, freeform_submissions.`field_1`, freeform_submissions.`field_2`, freeform_submissions.`field_4`, freeform_submissions.`field_5`, freeform_submissions.`field_6`, freeform_submissions.`field_7`, freeform_submissions.`field_9`, freeform_submissions.`field_11`, freeform_submissions.`field_8`, freeform_submissions.`field_12`, `content`.`id` AS `contentId`, `content`.`title`, `content`.`field_text_ujcehzsb`, `elements`.`draftId`, `drafts`.`creatorId` AS `draftCreatorId`, `drafts`.`name` AS `draftName`, `drafts`.`notes` AS `draftNotes`, `drafts`.`provisional` AS `isProvisionalDraft`
+FROM (SELECT `elements`.`id` AS `elementsId`, `elements_sites`.`id` AS `elementsSitesId`, `content`.`id` AS `contentId`
+FROM `elements` `elements`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `elements`.`id`
+INNER JOIN `freeform_statuses` `sub_freeform_statuses` ON sub_freeform_statuses.`id` = freeform_submissions.`statusId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`elementId` = `elements`.`id`
+INNER JOIN `content` `content` ON `content`.`elementId` = `elements`.`id`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+WHERE (freeform_submissions.`isSpam`=FALSE) AND (`elements`.`id`=53) AND (`elements`.`archived`=FALSE) AND (`elements`.`dateDeleted` IS NULL) AND (`elements`.`revisionId` IS NULL)
+ORDER BY `elements`.`dateCreated` DESC) `subquery`
+INNER JOIN `freeform_submissions` `freeform_submissions` ON `freeform_submissions`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements` `elements` ON `elements`.`id` = `subquery`.`elementsId`
+INNER JOIN `elements_sites` `elements_sites` ON `elements_sites`.`id` = `subquery`.`elementsSitesId`
+INNER JOIN `content` `content` ON `content`.`id` = `subquery`.`contentId`
+LEFT JOIN `drafts` `drafts` ON `drafts`.`id` = `elements`.`draftId`
+INNER JOIN `freeform_forms` `freeform_forms` ON freeform_forms.`id` = freeform_submissions.`formId`
+INNER JOIN `freeform_statuses` `freeform_statuses` ON freeform_statuses.`id` = freeform_submissions.`statusId`
+ORDER BY `elements`.`dateCreated` DESC
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `forms`.`id`, `forms`.`type`, `forms`.`metadata`, `forms`.`uid`, `forms`.`name`, `forms`.`handle`, `forms`.`spamBlockCount`, `forms`.`submissionTitleFormat`, `forms`.`description`, `forms`.`layoutJson`, `forms`.`returnUrl`, `forms`.`defaultStatus`, `forms`.`formTemplateId`, `forms`.`color`
+FROM `freeform_forms` `forms`
+WHERE `id`=1
+ORDER BY `forms`.`order`, `forms`.`name`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `forms`.`id`, `forms`.`type`, `forms`.`metadata`, `forms`.`uid`, `forms`.`name`, `forms`.`handle`, `forms`.`spamBlockCount`, `forms`.`submissionTitleFormat`, `forms`.`description`, `forms`.`layoutJson`, `forms`.`returnUrl`, `forms`.`defaultStatus`, `forms`.`formTemplateId`, `forms`.`color`
+FROM `freeform_forms` `forms`
+WHERE `id`=1
+ORDER BY `forms`.`order`, `forms`.`name`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `forms`.`id`, `forms`.`type`, `forms`.`metadata`, `forms`.`uid`, `forms`.`name`, `forms`.`handle`, `forms`.`spamBlockCount`, `forms`.`submissionTitleFormat`, `forms`.`description`, `forms`.`layoutJson`, `forms`.`returnUrl`, `forms`.`defaultStatus`, `forms`.`formTemplateId`, `forms`.`color`
+FROM `freeform_forms` `forms`
+WHERE `id`=1
+ORDER BY `forms`.`order`, `forms`.`name`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] UPDATE `queue` SET `progress`=100, `timeUpdated`=1660597356 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `queue` SET `progress`=100, `timeUpdated`=1660597356 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] UPDATE `queue` SET `progress`=100, `timeUpdated`=1660597356 WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] DELETE FROM `searchindex` WHERE (`elementId`=53) AND (`siteId`=1)
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `searchindex` WHERE (`elementId`=53) AND (`siteId`=1)
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `searchindex` WHERE (`elementId`=53) AND (`siteId`=1)
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `searchindex`
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SHOW FULL COLUMNS FROM `searchindex`
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SHOW FULL COLUMNS FROM `searchindex`
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'searchindex' AND `kcu`.`TABLE_NAME` = 'searchindex'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'searchindex' AND `kcu`.`TABLE_NAME` = 'searchindex'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`,
+    `rc`.`DELETE_RULE`,
+    `rc`.`UPDATE_RULE`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'searchindex' AND `kcu`.`TABLE_NAME` = 'searchindex'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'slug', 0, 1, '')
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'slug', 0, 1, '')
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'slug', 0, 1, '')
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'title', 0, 1, ' 2022 08 15 13 34 41 ')
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'title', 0, 1, ' 2022 08 15 13 34 41 ')
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] INSERT INTO `searchindex` (`elementId`, `attribute`, `fieldId`, `siteId`, `keywords`) VALUES (53, 'title', 0, 1, ' 2022 08 15 13 34 41 ')
+2022-08-15 14:02:36 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [5] Updating search indexes (attempt: 1, pid: 50336) - Done (time: 0.051s)
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='5'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] UPDATE `queue` SET `dateReserved`='2022-08-15 21:02:36', `timeUpdated`=1660597356, `attempt`=1 WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [6] Generating pending image transforms (attempt: 1, pid: 50336) - Started
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT `id`
+FROM `assettransformindex`
+WHERE (`fileExists`=FALSE) AND (`inProgress`=FALSE)
+2022-08-15 14:02:36 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [6] Generating pending image transforms (attempt: 1, pid: 50336) - Done (time: 0.001s)
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::execute] DELETE FROM `queue` WHERE `id`='6'
+2022-08-15 14:02:36 [-][1][-][info][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile begin][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1
+2022-08-15 14:02:36 [-][1][-][profile end][yii\db\Command::query] SELECT *
+FROM `queue`
+WHERE (`channel`='queue') AND ((`fail`=FALSE) AND (`timeUpdated` IS NULL)) AND (`timePushed` + `delay` <= 1660597356)
+ORDER BY `priority`, `id`
+LIMIT 1

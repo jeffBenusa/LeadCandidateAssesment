@@ -1,0 +1,19 @@
+columnSuffix: ujcehzsb
+contentColumnType: text
+fieldGroup: f57762b0-c0de-40bb-8373-43c2da606997 # Common
+handle: text
+instructions: ''
+name: Text
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
